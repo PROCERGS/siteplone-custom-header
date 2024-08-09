@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="procergs.customheader">
+
+    <!-- -*- extra stuff goes here -*- -->
+
+    <utility
+        component=".header_options.HeaderOptionsFactory"
+        name="procergs.customheader.HeaderOptions"
+    />
+
+
+</configure>

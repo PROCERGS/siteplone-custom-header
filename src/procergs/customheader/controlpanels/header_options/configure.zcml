@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="procergs.customheader">
+
+  <browser:page
+    name="header_options-controlpanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.HeaderOptionsView"
+    layer="procergs.customheader.interfaces.IProcergsCustomheaderLayer"
+    permission="cmf.ManagePortal"
+    />
+
+  <include package="plone.restapi"  />
+  <adapter
+    factory=".controlpanel.HeaderOptionsConfigletPanel"
+    name="header_options" />
+
+
+</configure>
