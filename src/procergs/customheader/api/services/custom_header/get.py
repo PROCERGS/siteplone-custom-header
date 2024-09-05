@@ -12,9 +12,9 @@ class CustomHeaderGet(Service):
         super(CustomHeaderGet, self).__init__(context, request)
 
     def reply(self):
-        header_type = (
+        url = (
             api.portal.get_registry_record(
-                "procergs.customheader.header_options.header_type",
+                "procergs.customheader.header_options.url",
                 #interface=IMyFeaturedControlPanel,
                 default="",
             )
@@ -30,7 +30,7 @@ class CustomHeaderGet(Service):
         )
 
         return {
-            "header_type": header_type,
+            "url": url,
             "subtitle": subtitle
         }
 
