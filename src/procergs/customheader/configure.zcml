@@ -43,15 +43,11 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-    <include package=".vocabularies" />
-
-
-    <include package=".controlpanels" />
-
+  <include package=".controlpanels" />
 
   <include package=".api" />
 
-    <include package=".controlpanels" />
+  <include package=".controlpanels" />
 
 
 </configure>

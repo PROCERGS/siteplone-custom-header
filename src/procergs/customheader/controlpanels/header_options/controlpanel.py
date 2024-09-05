@@ -13,19 +13,6 @@ from zope.interface import Invalid
 from zope.interface import invariant
 
 class IHeaderOptions(Interface):
-    header_type = schema.Choice(
-        title=_(
-            "Header Type",
-        ),
-        description=_(
-            "",
-        ),
-        vocabulary="procergs.customheader.HeaderOptions",
-        default="default",
-        required=True,
-        readonly=False,
-    )
-
     subtitle = schema.TextLine(
         title=_(
             "Subtitle",
@@ -38,10 +25,17 @@ class IHeaderOptions(Interface):
         readonly=False,
     )
 
-    @invariant
-    def validate_start_end(data):
-        if data.header_type == "subsecretaria" and data.subtitle is None:
-            raise Invalid('Subtitle is required for this Header Type')
+    url = schema.TextLine(
+        title=_(
+            "Url",
+        ),
+        description=_(
+            "",
+        ),
+        default="",
+        required=False,
+        readonly=False,
+    )
 
 
 class HeaderOptions(RegistryEditForm):

@@ -2,7 +2,6 @@ CHANGES.rst
 CONTRIBUTORS.rst
 DEVELOP.rst
 LICENSE.GPL
-LICENSE.rst
 MANIFEST.in
 README.rst
 setup.cfg
@@ -62,6 +61,3 @@ src/procergs/customheader/tests/test_robot.py
 src/procergs/customheader/tests/test_setup.py
 src/procergs/customheader/tests/test_vocab_header_options.py
 src/procergs/customheader/tests/robot/test_example.robot
-src/procergs/customheader/vocabularies/__init__.py
-src/procergs/customheader/vocabularies/configure.zcml
-src/procergs/customheader/vocabularies/header_options.py

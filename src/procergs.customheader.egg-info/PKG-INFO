@@ -23,7 +23,6 @@ Classifier: Operating System :: OS Independent
 Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
 Requires-Python: >=3.7
 License-File: LICENSE.GPL
-License-File: LICENSE.rst
 Requires-Dist: setuptools
 Requires-Dist: z3c.jbot
 Requires-Dist: plone.api>=1.8.4
